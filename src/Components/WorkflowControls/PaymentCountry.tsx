@@ -3,7 +3,8 @@ import {  NodeProps, Position } from "reactflow";
 import ReactCountryFlag from "react-country-flag";
 import styles from "./Styles.module.css";
 import CustomHandle from "./CustomHandle";
-const PaymentCountry = ({
+import { memo } from "react";
+const PaymentCountry = memo(({
   data: { country, countryCode, currency },
 }: NodeProps<{ country: string; countryCode: string; currency: string }>) => {
   return (
@@ -26,6 +27,6 @@ const PaymentCountry = ({
       <CustomHandle type="target" position={Position.Bottom} />
     </div>
   );
-};
+});
 
 export default PaymentCountry;

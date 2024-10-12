@@ -1,5 +1,5 @@
 .paymentInitContainer,
-.countryFlag, .countryProvider {
+.countryFlag {
   border: 1px solid rgb(164, 68, 199);
 }
 .paymentInit{

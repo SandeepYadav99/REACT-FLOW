@@ -28,6 +28,11 @@ export const initialNodes: Node[] = [
     position: { x: 350, y: 20 },
     data: { name: "Google Pay", code:"Gp"},
     type: "paymentProvider",
+    style: {
+      border: '1px solid blue',
+      borderRadius: 15,
+      fontSize: 12,
+    },
   },
   // {
   //   id: "5",

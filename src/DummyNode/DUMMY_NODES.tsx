@@ -1,8 +1,8 @@
-const DUMMY_NODES: {
+type NodeData = {
   value: string;
   code: string;
-}[] = [
-  
+};
+const DUMMY_NODES:NodeData[] = [
   { value: "Stripe", code: "St" },
   { value: "Paypal", code: "Pp" },
   // { value: "Google Pay", code: "GP" },
@@ -11,4 +11,3 @@ const DUMMY_NODES: {
 ];
 
 export default DUMMY_NODES;
-

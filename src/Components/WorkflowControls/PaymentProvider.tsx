@@ -1,14 +1,14 @@
 import { NodeProps, NodeResizer, Position, useReactFlow } from "reactflow";
 
 import styles from "./Styles.module.css";
-import { useCallback } from "react";
+import { memo, useCallback } from "react";
 import CustomHandle from "./CustomHandle";
 import Am from "../../assets/Am.png";
 import Ap from "../../assets/Ap.png";
 import Gp from "../../assets/Gp.png";
 import St from "../../assets/St.png";
 import Pp from "../../assets/Pp.png";
-const PaymentProvider = ({
+const PaymentProvider = memo(({
   data: { name, code },
   id,
 }: NodeProps<{ code: string; name: string }>) => {
@@ -50,6 +50,6 @@ const PaymentProvider = ({
       <CustomHandle type="target" position={Position.Left} />
     </>
   );
-};
+});
 
 export default PaymentProvider;

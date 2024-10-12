@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { memo, useCallback } from "react";
 import {
   BezierEdge,
   EdgeProps,
@@ -7,7 +7,7 @@ import {
   useReactFlow,
 } from "reactflow";
 
-const CustomEdge = (props: EdgeProps) => {
+const CustomEdge = memo((props: EdgeProps) => {
   const {
     id,
     sourceX,
@@ -55,6 +55,6 @@ const CustomEdge = (props: EdgeProps) => {
       </EdgeLabelRenderer>
     </>
   );
-};
+});
 
 export default CustomEdge;
