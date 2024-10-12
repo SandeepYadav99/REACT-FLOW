@@ -1,7 +1,8 @@
-import React from "react";
-import { Handle, NodeProps, Position } from "reactflow";
+
+import {  NodeProps, Position } from "reactflow";
 import ReactCountryFlag from "react-country-flag";
 import styles from "./Styles.module.css";
+import CustomHandle from "./CustomHandle";
 const PaymentCountry = ({
   data: { country, countryCode, currency },
 }: NodeProps<{ country: string; countryCode: string; currency: string }>) => {
@@ -20,9 +21,9 @@ const PaymentCountry = ({
         <br />
         {currency}
       </div>
-      <Handle type="source" position={Position.Right} />
-      <Handle type="target" position={Position.Left} />
-      <Handle type="target" position={Position.Bottom} />
+      <CustomHandle type="source" position={Position.Right} />
+      <CustomHandle type="target" position={Position.Left} />
+      <CustomHandle type="target" position={Position.Bottom} />
     </div>
   );
 };

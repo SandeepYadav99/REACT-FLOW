@@ -45,6 +45,8 @@ const CustomEdge = (props: EdgeProps) => {
             transform: `translate(-50%, -50%) translate(${labelX}px,${labelY}px)`,
             color: "red",
             background: "transparent",
+            pointerEvents: "auto",
+            cursor:"pointer"
           }}
           onClick={()=>handleDeleteEdge()}
         >

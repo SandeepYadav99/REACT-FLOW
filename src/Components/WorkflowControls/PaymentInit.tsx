@@ -1,11 +1,12 @@
-import { Handle, NodeProps, Position } from "reactflow";
+import {  NodeProps, Position } from "reactflow";
 import styles from "./Styles.module.css";
+import CustomHandle from "./CustomHandle";
 const PaymentInit = ({ data: { amount } }: NodeProps<{ amount: number }>) => {
   return (
     <div className={styles.paymentInitContainer}>
       <div className={styles.paymentInit}>Payment Initialize</div>
       <div className={styles.amount}>${amount}</div>
-      <Handle type="source" position={Position.Right}/>
+      <CustomHandle type="source" position={Position.Right}/>
     </div>
   );
 };

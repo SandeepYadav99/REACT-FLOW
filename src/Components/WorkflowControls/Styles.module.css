@@ -54,3 +54,14 @@ gap: 20px;
   outline-color: #7b2aff;
   background-color: #fff;
 }
+.handle{
+  width: 8px !important;
+  height: 8px !important;
+ background-color: white !important;
+ border: 2px solid gray !important;
+}
+.name:has(img){
+  display: flex !important;
+  align-items: center !important;
+  
+}
