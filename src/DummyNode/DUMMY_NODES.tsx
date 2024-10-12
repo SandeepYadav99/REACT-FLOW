@@ -1,13 +1,14 @@
 const DUMMY_NODES: {
   value: string;
-  name: string;
+  code: string;
 }[] = [
-  {value:"Select an option", name:""},
-  { value: "Stripe", name: "stripe" },
-  { value: "Paypal", name: "paypal" },
-  { value: "Google Pay", name: "google-pay" },
-  { value: "Apple Pay", name: "apple_pay" },
-  { value: "Amazon Pay", name: "Amazon Pay" },
+  
+  { value: "Stripe", code: "St" },
+  { value: "Paypal", code: "Pp" },
+  // { value: "Google Pay", code: "GP" },
+  { value: "Apple Pay", code: "AP" },
+  { value: "Amazon Pay", code: "Am" },
 ];
 
 export default DUMMY_NODES;
+

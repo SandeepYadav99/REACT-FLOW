@@ -1,5 +1,11 @@
-.dropdown{
-   width: 50%;
+.dropdown {
+  width: 50%;
   margin: auto;
- 
+}
+
+.flowContainer {
+  border: 1px solid gray;
+  width: 98vw !important;
+  height: 98vh !important;
+  margin: 0 5px !important;
 }

@@ -1,0 +1,56 @@
+.paymentInitContainer,
+.countryFlag, .countryProvider {
+  border: 1px solid rgb(164, 68, 199);
+}
+.paymentInit{
+  background-color: rgb(13, 13, 133);
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 5px;
+}
+.amount, .countryFlag  {
+  text-align: left;
+  padding: 5px;
+}
+.countryFlag {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgb(223, 220, 220);
+}
+
+.countryProvider{
+border-radius: 24px !important;
+/* display: inline-block; */
+padding: 2px 8px;
+display: flex;
+gap: 20px;
+}
+.countryProvider button{
+  border: none;
+  background: transparent;
+  color: #f00;
+  font-size: 12px !important;
+  cursor: pointer;
+}
+
+/* ///////////// */
+
+.form select {
+  display: block;
+  width: 100%;
+  padding: 0.2rem 1rem;
+
+  border: 1px solid #e5e9f1;
+  border-radius: 4px;
+  background: #ffffff;
+  font-size: 1rem;
+  font-family: "Montserrat";
+  color: #777777;
+}
+
+.form select:focus {
+  outline-color: #7b2aff;
+  background-color: #fff;
+}
