@@ -33,7 +33,7 @@ const App = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
-
+console.log(setNodes)
   const onConnect = useCallback(
     (params: Connection) => {
       const edge = { ...params, animated: true, id: `${edges.length} + 1` , type:"custom"};
@@ -52,7 +52,7 @@ const App = () => {
           onEdgesChange={onEdgesChange}
           nodeTypes={nodeTypes}
           edgeTypes={edgeTypes}
-          className="react-flow-node-resizer-example"
+        
           fitView
         >
           <Controls />

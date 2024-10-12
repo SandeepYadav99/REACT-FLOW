@@ -28,6 +28,7 @@ const CustomEdge = memo((props: EdgeProps) => {
     targetPosition,
     sourcePosition,
   });
+  console.log(edgePath)
   const handleDeleteEdge = useCallback(() => {
     return setEdges((prevEdge) => {
       return prevEdge.filter((edge) => edge.id !== id);
