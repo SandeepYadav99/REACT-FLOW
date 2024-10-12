@@ -2,12 +2,13 @@ import React, { useCallback } from "react";
 import styles from "./Styles.module.css";
 import DUMMY_NODES from "../../DummyNode/DUMMY_NODES";
 import { useReactFlow } from "reactflow";
+
 const PaymentSelectFiled = () => {
   const { setNodes } = useReactFlow();
   const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const eventValue = event.target.value;
     const location = Math.random() * 500;
-    const selectedNode = DUMMY_NODES.find((node) => node.code === eventValue);
+    const selectedNode= DUMMY_NODES.find((node) => node.code === eventValue);
     const { value, code } = selectedNode;
 
     setNodes((prevNodes) => {
@@ -42,7 +43,9 @@ const PaymentSelectFiled = () => {
       <div className="formFlex">
         <div className="formGroup">
           <div className={styles.form}>
-            <select onChange={handleSelectChange}>{dropdownFiled()}</select>
+            <select onChange={handleSelectChange} >
+              <option className={styles.paymentDefault}>Add Payment Provider</option>
+              {dropdownFiled()}</select>
           </div>
         </div>
       </div>
