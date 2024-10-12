@@ -5,19 +5,19 @@ export const initialEdges: Edge[] = [];
 export const initialNodes: Node[] = [
   {
     id: "1",
-    position: { x: -200, y: 20 },
+    position: { x: -50, y: 20 },
     data: { amount: 10 },
     type: "paymentInit",
   },
   {
     id: "2",
-    position: { x: -20, y: -50 },
+    position: { x: 120, y: -50 },
     data: { currency:"$", country:"United State" , countryCode:"US"},
     type: "paymentCounter",
   },
   {
     id: "3",
-    position: { x: -20, y: 80 },
+    position: { x: 120, y: 80 },
     data: { currency:"£", country:"England" , countryCode:"GB"},
     type: "paymentCounter",
   },
