@@ -52,6 +52,7 @@ const App = () => {
           onEdgesChange={onEdgesChange}
           nodeTypes={nodeTypes}
           edgeTypes={edgeTypes}
+          className="react-flow-node-resizer-example"
           fitView
         >
           <Controls />
