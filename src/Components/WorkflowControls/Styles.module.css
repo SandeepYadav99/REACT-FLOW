@@ -2,13 +2,14 @@
 .countryFlag {
   border: 1px solid rgb(164, 68, 199);
 }
-.paymentInit{
+.paymentInit {
   background-color: rgb(13, 13, 133);
   color: #fff;
   font-size: 0.8rem;
   padding: 5px;
 }
-.amount, .countryFlag  {
+.amount,
+.countryFlag {
   text-align: left;
   padding: 5px;
 }
@@ -17,17 +18,19 @@
   gap: 5px;
   align-items: center;
   border-radius: 5px;
-  background-color: rgb(223, 220, 220);
+  background-color: rgb(245, 238, 238);
 }
 
-.countryProvider{
-border-radius: 24px !important;
-/* display: inline-block; */
-padding: 2px 8px;
-display: flex;
-gap: 20px;
+.countryProvider {
+  border-radius: 24px !important;
+  display: inline-block;
+  padding: 3px 8px;
 }
-.countryProvider button{
+.provider1 {
+  display: flex;
+  gap: 20px;
+}
+.countryProvider button {
   border: none;
   background: transparent;
   color: #f00;
@@ -54,14 +57,13 @@ gap: 20px;
   outline-color: #7b2aff;
   background-color: #fff;
 }
-.handle{
+.handle {
   width: 8px !important;
   height: 8px !important;
- background-color: white !important;
- border: 2px solid gray !important;
+  background-color: white !important;
+  border: 2px solid gray !important;
 }
-.name:has(img){
+.name:has(img) {
   display: flex !important;
   align-items: center !important;
-  
 }

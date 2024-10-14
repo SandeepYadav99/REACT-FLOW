@@ -36,6 +36,7 @@ const PaymentProvider = memo(({
         minHeight={30}
       />
       <div className={styles.countryProvider}>
+        <div className={styles.provider1}>
         <div className={styles.name}>
           <img
             src={payCode[code]}
@@ -46,6 +47,8 @@ const PaymentProvider = memo(({
           {name}
         </div>
         <button onClick={() => deleteNodeHandler()}>X</button>
+
+        </div>
       </div>
       <CustomHandle type="target" position={Position.Left} />
     </>
